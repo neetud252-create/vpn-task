@@ -74,6 +74,7 @@
   }
   .frames .num{font-size:34px;font-weight:900;color:var(--green);line-height:1}
   .frames small{color:var(--muted)}
+  /* Verification code proof box */
   .code-box{
     text-align:center;background:linear-gradient(180deg,#0f1a2c,#0c1422);
     border:2px dashed var(--blue);border-radius:14px;padding:18px;margin-top:6px;
@@ -103,18 +104,29 @@
 <body>
 <div class="wrap">
 
+  <!-- =================================================================
+       ⭐ EDIT HERE ANYTIME ⭐  — change the video for a new campaign
+       ================================================================= -->
   <script>
     const CONFIG = {
+      // Keyword workers type into YouTube search:
       searchKeyword: "Nordvpn Coupon Code",
+
+      // ⬇️ THE THUMBNAIL IMAGE. Paste EITHER an image link (https://.../thumb.jpg)
+      //    OR a base64 data URL (data:image/jpeg;base64,....).
+      //    Leave "" to show the placeholder.
       thumbnailSrc: "thumb.jpg",
-      framesTarget: "9240",
-      watchMinutes: "3",
-      codeDigits: "10"
+
+      // Watch requirements:
+      framesTarget: "9240",   // Viewport/Frames number to reach
+      watchMinutes: "3",      // minutes of watching
+      codeDigits: "10"        // number of digits in the in-video verification code
     };
   </script>
 
   <div class="topbar">⚠️ READ EVERY STEP CAREFULLY — ONE MISTAKE = PERMANENT BAN FROM ALL TASKS ⚠️</div>
 
+  <!-- THUMBNAIL AT TOP (no title, per request) -->
   <div class="card">
     <div class="thumb-label">🎯 Find THIS exact video on YouTube</div>
     <div class="thumb-frame">
@@ -127,6 +139,7 @@
     <div class="thumb-cap">☝️ The video you find on YouTube must look <b>EXACTLY</b> like this thumbnail. If it's different — it's the WRONG video.</div>
   </div>
 
+  <!-- SEARCH KEYWORD -->
   <div class="card">
     <h2>🔍 Step 1 — Search this on YouTube</h2>
     <div class="kw-row">
@@ -136,6 +149,7 @@
     <p class="sub" style="margin-top:10px">Type the keyword above into the YouTube search bar, then find the video that matches the thumbnail at the top of this page.</p>
   </div>
 
+  <!-- FULL INSTRUCTIONS -->
   <div class="card">
     <h2>📋 Full Task Steps — do them in order</h2>
     <ol class="steps">
@@ -144,12 +158,14 @@
       <li><b>Watch the WHOLE video fully</b> — absolutely <span class="hl-red">NO skipping</span>. The <b>Viewport / Frames</b> number in Stats for Nerds must reach at least <span class="hl" id="framesInline">9240</span> after you watch for <span class="hl" id="minInline">3</span> minutes.</li>
       <li><span class="hl-red">If you skip, the system detects it automatically</span> and you are <b>banned permanently</b> from tasks.</li>
     </ol>
+
     <div class="frames">
       <div class="num" id="framesBig">9240</div>
       <small>← minimum <b>Viewport / Frames</b> you must reach in <span id="minSmall">3</span> minutes of watching</small>
     </div>
   </div>
 
+  <!-- PROOF (new verification-code rules) -->
   <div class="card">
     <h2>📸 Proof Required</h2>
     <div class="code-box">
@@ -164,6 +180,7 @@
     </ol>
   </div>
 
+  <!-- BAN WARNING -->
   <div class="card ban">
     <h2>🚨 You will be BANNED PERMANENTLY if you:</h2>
     <ul>
@@ -192,16 +209,21 @@
     document.getElementById('minSmall').textContent = c.watchMinutes;
     document.getElementById('codeDigits1').textContent = c.codeDigits;
     document.getElementById('codeDigits2').textContent = c.codeDigits;
+
+    // build code slot boxes
     var n = parseInt(c.codeDigits,10) || 10, slots='';
     for(var i=0;i<n;i++){ slots += '<span>?</span>'; }
     document.getElementById('codeSlots').innerHTML = slots;
+
     if (c.thumbnailSrc && c.thumbnailSrc.trim() !== "") {
       var img = document.getElementById('thumbImg');
-      img.src = c.thumbnailSrc;
+      // cache-buster: always load the freshest thumb.jpg (great for daily swaps)
+      img.src = c.thumbnailSrc + (c.thumbnailSrc.indexOf('data:')===0 ? '' : ('?v=' + Date.now()));
       img.style.display = 'block';
       document.getElementById('thumbPh').style.display = 'none';
     }
   })();
+
   function copyKw(){
     var text = CONFIG.searchKeyword;
     var btn = document.getElementById('copyBtn');
