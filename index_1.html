@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NordVPN Coupon Code — Task Instructions</title>
+<style>
+  :root{
+    --bg:#0b0d12;--panel:#141821;--panel2:#1b202c;--line:#2a3140;
+    --text:#eef2f8;--muted:#9aa6bb;--red:#ff3b30;--red-deep:#c62029;
+    --green:#22c55e;--yellow:#ffcc00;--blue:#3b82f6;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:radial-gradient(1200px 600px at 50% -10%, #17202e 0%, var(--bg) 60%);
+    color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55;padding:16px;-webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:820px;margin:0 auto}
+  .topbar{
+    background:linear-gradient(90deg,var(--red-deep),var(--red));
+    color:#fff;font-weight:800;text-align:center;padding:10px 14px;border-radius:12px;
+    margin-bottom:16px;letter-spacing:.3px;font-size:14px;
+    box-shadow:0 6px 24px rgba(255,59,48,.25);animation:pulse 1.8s infinite;
+  }
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.82}}
+  .card{
+    background:var(--panel);border:1px solid var(--line);border-radius:16px;
+    padding:22px;margin-bottom:16px;box-shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  h2{font-size:18px;margin:4px 0 10px;display:flex;align-items:center;gap:8px}
+  .sub{color:var(--muted);font-size:14px}
+  .thumb-label{
+    display:inline-block;background:var(--yellow);color:#161616;font-weight:800;
+    font-size:12px;letter-spacing:.5px;padding:5px 12px;border-radius:999px;
+    margin-bottom:12px;text-transform:uppercase;
+  }
+  .thumb-frame{
+    position:relative;border-radius:14px;overflow:hidden;border:3px solid var(--yellow);
+    background:#000;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;
+  }
+  .thumb-frame img{width:100%;height:100%;object-fit:cover;display:block}
+  .thumb-placeholder{color:#8892a6;text-align:center;padding:24px;font-size:14px}
+  .thumb-cap{margin-top:12px;text-align:center;color:var(--muted);font-size:13px}
+  .kw-row{display:flex;gap:10px;flex-wrap:wrap;align-items:stretch;margin-top:6px}
+  .kw-box{
+    flex:1;min-width:220px;background:#0f1420;border:1px dashed var(--blue);border-radius:12px;
+    padding:14px 16px;font-size:18px;font-weight:800;color:#dbe6ff;display:flex;align-items:center;gap:10px;
+  }
+  .kw-box .yt{color:var(--red);font-weight:900}
+  .btn{
+    border:none;cursor:pointer;border-radius:12px;font-weight:800;font-size:14px;
+    padding:0 18px;color:#fff;background:var(--blue);transition:transform .05s ease;
+  }
+  .btn:active{transform:scale(.97)}
+  .btn.copied{background:var(--green)}
+  ol.steps{list-style:none;counter-reset:s;margin-top:6px}
+  ol.steps>li{
+    counter-increment:s;position:relative;padding:14px 14px 14px 56px;
+    background:var(--panel2);border:1px solid var(--line);border-radius:12px;margin-bottom:10px;
+  }
+  ol.steps>li::before{
+    content:counter(s);position:absolute;left:14px;top:14px;width:28px;height:28px;
+    border-radius:50%;background:var(--red);color:#fff;font-weight:800;
+    display:flex;align-items:center;justify-content:center;font-size:15px;
+  }
+  ol.steps b{color:#fff}
+  .hl{color:var(--yellow);font-weight:800}
+  .hl-red{color:#ff6b63;font-weight:800}
+  .frames{
+    text-align:center;background:linear-gradient(90deg,#122016,#0e1a12);
+    border:1px solid #1f7a3a;border-radius:14px;padding:16px;margin-top:6px;
+  }
+  .frames .num{font-size:34px;font-weight:900;color:var(--green);line-height:1}
+  .frames small{color:var(--muted)}
+  /* Verification code proof box */
+  .code-box{
+    text-align:center;background:linear-gradient(180deg,#0f1a2c,#0c1422);
+    border:2px dashed var(--blue);border-radius:14px;padding:18px;margin-top:6px;
+  }
+  .code-digits{
+    display:inline-flex;gap:8px;margin-top:8px;flex-wrap:wrap;justify-content:center;
+  }
+  .code-digits span{
+    width:34px;height:44px;border-radius:8px;background:#0a1120;border:1px solid #2b4570;
+    display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:900;color:#7fb0ff;
+  }
+  .ban{background:linear-gradient(180deg,#2a1113,#1a0d0f);border:2px solid var(--red);border-radius:16px;padding:20px}
+  .ban h2{color:#ff6b63}
+  .ban ul{list-style:none;margin-top:8px}
+  .ban li{padding:8px 0 8px 30px;position:relative;font-weight:600}
+  .ban li::before{content:"⛔";position:absolute;left:0;top:7px}
+  .stamp{
+    display:inline-block;margin-top:14px;border:3px solid var(--red);color:var(--red);
+    font-weight:900;letter-spacing:2px;text-transform:uppercase;font-size:15px;
+    padding:8px 16px;border-radius:10px;transform:rotate(-3deg);
+  }
+  .proof li{margin-left:18px;margin-bottom:8px}
+  .foot{text-align:center;color:var(--muted);font-size:12px;padding:14px 0}
+  .divider{height:1px;background:var(--line);margin:16px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- =================================================================
+       ⭐ EDIT HERE ANYTIME ⭐  — change the video for a new campaign
+       ================================================================= -->
+  <script>
+    const CONFIG = {
+      // Keyword workers type into YouTube search:
+      searchKeyword: "Nordvpn Coupon Code",
+
+      // ⬇️ THE THUMBNAIL IMAGE. Paste EITHER an image link (https://.../thumb.jpg)
+      //    OR a base64 data URL (data:image/jpeg;base64,....).
+      //    Leave "" to show the placeholder.
+      thumbnailSrc: "",
+
+      // Watch requirements:
+      framesTarget: "9240",   // Viewport/Frames number to reach
+      watchMinutes: "3",      // minutes of watching
+      codeDigits: "10"        // number of digits in the in-video verification code
+    };
+  </script>
+
+  <div class="topbar">⚠️ READ EVERY STEP CAREFULLY — ONE MISTAKE = PERMANENT BAN FROM ALL TASKS ⚠️</div>
+
+  <!-- THUMBNAIL AT TOP (no title, per request) -->
+  <div class="card">
+    <div class="thumb-label">🎯 Find THIS exact video on YouTube</div>
+    <div class="thumb-frame">
+      <img id="thumbImg" alt="Video thumbnail" style="display:none">
+      <div id="thumbPh" class="thumb-placeholder">
+        📺 <b>Thumbnail goes here</b><br>
+        Paste your image link into <b>thumbnailSrc</b> at the top of this file.
+      </div>
+    </div>
+    <div class="thumb-cap">☝️ The video you find on YouTube must look <b>EXACTLY</b> like this thumbnail. If it's different — it's the WRONG video.</div>
+  </div>
+
+  <!-- SEARCH KEYWORD -->
+  <div class="card">
+    <h2>🔍 Step 1 — Search this on YouTube</h2>
+    <div class="kw-row">
+      <div class="kw-box"><span class="yt">▶ YouTube:</span><span id="kwText">keyword</span></div>
+      <button class="btn" id="copyBtn" onclick="copyKw()">Copy</button>
+    </div>
+    <p class="sub" style="margin-top:10px">Type the keyword above into the YouTube search bar, then find the video that matches the thumbnail at the top of this page.</p>
+  </div>
+
+  <!-- FULL INSTRUCTIONS -->
+  <div class="card">
+    <h2>📋 Full Task Steps — do them in order</h2>
+    <ol class="steps">
+      <li><b>Search on YouTube:</b> <span class="hl" id="kwInline">keyword</span> and open the video that matches the thumbnail above.</li>
+      <li><b>Before playing</b>, right-click the video → turn on <span class="hl">"Stats for Nerds"</span>. Then set quality to <span class="hl">Full HD 1080p</span> at <span class="hl">60fps</span>. Do <span class="hl-red">NOT</span> skip, fast-forward, or change playback speed.</li>
+      <li><b>Watch the WHOLE video fully</b> — absolutely <span class="hl-red">NO skipping</span>. The <b>Viewport / Frames</b> number in Stats for Nerds must reach at least <span class="hl" id="framesInline">9240</span> after you watch for <span class="hl" id="minInline">3</span> minutes.</li>
+      <li><span class="hl-red">If you skip, the system detects it automatically</span> and you are <b>banned permanently</b> from tasks.</li>
+    </ol>
+
+    <div class="frames">
+      <div class="num" id="framesBig">9240</div>
+      <small>← minimum <b>Viewport / Frames</b> you must reach in <span id="minSmall">3</span> minutes of watching</small>
+    </div>
+  </div>
+
+  <!-- PROOF (new verification-code rules) -->
+  <div class="card">
+    <h2>📸 Proof Required</h2>
+    <div class="code-box">
+      <div style="font-weight:800;font-size:16px">🔑 There is a <span class="hl" id="codeDigits1">10</span>-digit verification code inside the video</div>
+      <div class="code-digits" id="codeSlots"></div>
+      <div class="sub" style="margin-top:10px">Watch the full video to find it, then submit that code as your proof.</div>
+    </div>
+    <ol class="proof" style="margin-top:14px">
+      <li>You will get a <b><span id="codeDigits2">10</span>-digit verification code</b> shown inside the video. <b>Submit that code as your proof.</b></li>
+      <li><span class="hl-red">WARNING:</span> If you submit the <b>WRONG code</b>, you are <b>PERMANENTLY BANNED</b> from tasks.</li>
+      <li><b>Watch the video without skipping</b> to get the code.</li>
+    </ol>
+  </div>
+
+  <!-- BAN WARNING -->
+  <div class="card ban">
+    <h2>🚨 You will be BANNED PERMANENTLY if you:</h2>
+    <ul>
+      <li>Submit the wrong verification code</li>
+      <li>Skip, fast-forward, or speed up the video</li>
+      <li>Watch the wrong video (doesn't match the thumbnail above)</li>
+      <li>Don't reach the required Viewport/Frames number</li>
+      <li>Don't turn on Stats for Nerds / don't use 1080p 60fps</li>
+    </ul>
+    <div class="stamp">Do it right — or get banned</div>
+    <p class="sub" style="margin-top:14px">There are <b>no second chances</b>. The system checks automatically. Watch fully, get the correct code, and submit it exactly.</p>
+  </div>
+
+  <div class="foot">Complete the task honestly to get approved and paid. Good luck! ✅</div>
+
+</div>
+
+<script>
+  (function(){
+    var c = CONFIG;
+    document.getElementById('kwText').textContent = c.searchKeyword;
+    document.getElementById('kwInline').textContent = c.searchKeyword;
+    document.getElementById('framesInline').textContent = c.framesTarget;
+    document.getElementById('framesBig').textContent = c.framesTarget;
+    document.getElementById('minInline').textContent = c.watchMinutes;
+    document.getElementById('minSmall').textContent = c.watchMinutes;
+    document.getElementById('codeDigits1').textContent = c.codeDigits;
+    document.getElementById('codeDigits2').textContent = c.codeDigits;
+
+    // build code slot boxes
+    var n = parseInt(c.codeDigits,10) || 10, slots='';
+    for(var i=0;i<n;i++){ slots += '<span>?</span>'; }
+    document.getElementById('codeSlots').innerHTML = slots;
+
+    if (c.thumbnailSrc && c.thumbnailSrc.trim() !== "") {
+      var img = document.getElementById('thumbImg');
+      img.src = c.thumbnailSrc;
+      img.style.display = 'block';
+      document.getElementById('thumbPh').style.display = 'none';
+    }
+  })();
+
+  function copyKw(){
+    var text = CONFIG.searchKeyword;
+    var btn = document.getElementById('copyBtn');
+    function done(){ btn.textContent='Copied ✓'; btn.classList.add('copied'); setTimeout(function(){btn.textContent='Copy';btn.classList.remove('copied');},1600); }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done).catch(fallback);
+    } else { fallback(); }
+    function fallback(){
+      var t=document.createElement('textarea');t.value=text;document.body.appendChild(t);t.select();
+      try{document.execCommand('copy');}catch(e){}
+      document.body.removeChild(t);done();
+    }
+  }
+</script>
+</body>
+</html>
