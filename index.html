@@ -1,10 +1,10 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>NordVPN Coupon Code</title>
+  <title>SMARTSCOUT COUPON CODE</title>
 
   <style>
     :root{
@@ -20,54 +20,27 @@
       --yellow:#ffcc00;
     }
 
-    *{
-      box-sizing:border-box;
-      margin:0;
-      padding:0;
-    }
+    *{box-sizing:border-box;margin:0;padding:0}
 
     body{
-      background:
-        radial-gradient(
-          1200px 600px at 50% -10%,
-          #17202e 0%,
-          var(--bg) 60%
-        );
+      background:radial-gradient(1200px 600px at 50% -10%,#17202e 0%,var(--bg) 60%);
       color:var(--text);
-      font-family:
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        Helvetica,
-        Arial,
-        sans-serif;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
       line-height:1.55;
       padding:16px;
-      -webkit-font-smoothing:antialiased;
     }
 
-    .wrap{
-      max-width:820px;
-      margin:0 auto;
-    }
+    .wrap{max-width:820px;margin:0 auto}
 
     .topbar{
-      background:
-        linear-gradient(
-          90deg,
-          var(--blue-deep),
-          var(--blue)
-        );
+      background:linear-gradient(90deg,var(--blue-deep),var(--blue));
       color:#fff;
       font-weight:800;
       text-align:center;
       padding:10px 14px;
       border-radius:12px;
       margin-bottom:16px;
-      letter-spacing:.3px;
       font-size:14px;
-      box-shadow:0 6px 24px rgba(59,130,246,.25);
     }
 
     .card{
@@ -82,15 +55,9 @@
     h2{
       font-size:18px;
       margin:4px 0 10px;
-      display:flex;
-      align-items:center;
-      gap:8px;
     }
 
-    .sub{
-      color:var(--muted);
-      font-size:14px;
-    }
+    .sub{color:var(--muted);font-size:14px}
 
     .thumb-label{
       display:inline-block;
@@ -98,7 +65,6 @@
       color:#161616;
       font-weight:800;
       font-size:12px;
-      letter-spacing:.5px;
       padding:5px 12px;
       border-radius:999px;
       margin-bottom:12px;
@@ -106,7 +72,6 @@
     }
 
     .thumb-frame{
-      position:relative;
       border-radius:14px;
       overflow:hidden;
       border:3px solid var(--yellow);
@@ -138,12 +103,24 @@
       font-size:13px;
     }
 
+    .info{
+      background:linear-gradient(90deg,#10251a,#0e1a12);
+      border:1px solid #1f7a3a;
+      border-radius:14px;
+      padding:18px;
+      text-align:center;
+    }
+
+    .info-title{
+      color:var(--green);
+      font-size:22px;
+      font-weight:900;
+    }
+
     .kw-row{
       display:flex;
       gap:10px;
       flex-wrap:wrap;
-      align-items:stretch;
-      margin-top:6px;
     }
 
     .kw-box{
@@ -156,15 +133,9 @@
       font-size:18px;
       font-weight:800;
       color:#dbe6ff;
-      display:flex;
-      align-items:center;
-      gap:10px;
     }
 
-    .kw-box .yt{
-      color:#ef4444;
-      font-weight:900;
-    }
+    .yt{color:#ef4444;font-weight:900}
 
     .btn{
       border:none;
@@ -172,46 +143,21 @@
       border-radius:12px;
       font-weight:800;
       font-size:14px;
-      padding:0 18px;
+      padding:12px 18px;
       color:#fff;
       background:var(--blue);
-      transition:transform .05s ease;
     }
 
-    .btn:active{
-      transform:scale(.97);
-    }
-
-    .btn.copied{
-      background:var(--green);
-    }
-
-    .info{
-      background:
-        linear-gradient(
-          90deg,
-          #10251a,
-          #0e1a12
-        );
-      border:1px solid #1f7a3a;
-      border-radius:14px;
-      padding:18px;
-    }
-
-    .info-title{
-      color:var(--green);
-      font-size:22px;
-      font-weight:900;
-    }
+    .btn.copied{background:var(--green)}
 
     .steps{
       list-style:none;
-      counter-reset:s;
+      counter-reset:step;
       margin-top:8px;
     }
 
-    .steps > li{
-      counter-increment:s;
+    .steps li{
+      counter-increment:step;
       position:relative;
       padding:14px 14px 14px 56px;
       background:var(--panel2);
@@ -220,8 +166,8 @@
       margin-bottom:10px;
     }
 
-    .steps > li::before{
-      content:counter(s);
+    .steps li::before{
+      content:counter(step);
       position:absolute;
       left:14px;
       top:14px;
@@ -231,29 +177,18 @@
       background:var(--blue);
       color:#fff;
       font-weight:800;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-size:15px;
+      display:grid;
+      place-items:center;
     }
 
-    .hl{
-      color:var(--yellow);
-      font-weight:800;
-    }
+    .hl{color:var(--yellow);font-weight:800}
 
     .deal-box{
       text-align:center;
-      background:
-        linear-gradient(
-          180deg,
-          #0f1a2c,
-          #0c1422
-        );
+      background:linear-gradient(180deg,#0f1a2c,#0c1422);
       border:2px dashed var(--blue);
       border-radius:14px;
       padding:20px;
-      margin-top:8px;
     }
 
     .deal-title{
@@ -272,413 +207,144 @@
       color:#fff;
       font-size:22px;
       font-weight:900;
-      letter-spacing:1px;
     }
 
     .notice{
-      background:
-        linear-gradient(
-          180deg,
-          #161c29,
-          #10151f
-        );
+      background:linear-gradient(180deg,#161c29,#10151f);
       border:1px solid var(--line);
       border-radius:14px;
       padding:18px;
     }
 
-    .notice ul{
-      margin-top:10px;
-      padding-left:22px;
-    }
-
-    .notice li{
-      margin-bottom:8px;
-    }
-
-    .foot{
-      text-align:center;
-      color:var(--muted);
-      font-size:12px;
-      padding:14px 0;
-    }
+    .notice ul{margin-top:10px;padding-left:22px}
+    .notice li{margin-bottom:8px}
+    .foot{text-align:center;color:var(--muted);font-size:12px;padding:14px 0}
 
     @media(max-width:600px){
-      body{
-        padding:10px;
-      }
-
-      .card{
-        padding:16px;
-      }
-
-      .kw-box{
-        min-width:100%;
-      }
-
-      .btn{
-        width:100%;
-        height:46px;
-      }
-
-      .deal-title{
-        font-size:22px;
-      }
+      body{padding:10px}
+      .card{padding:16px}
+      .kw-box,.btn{width:100%}
     }
   </style>
 </head>
 
 <body>
-
   <div class="wrap">
 
     <div class="topbar">
-      🔥 NORDVPN COUPON CODE — CHECK THE LATEST DEAL
+      🔥 SMARTSCOUT COUPON CODE — WATCH THE VIDEO FOR 3 MINUTES
     </div>
 
-
-    <!-- THUMBNAIL -->
     <div class="card">
-
-      <div class="thumb-label">
-        🎯 NordVPN Coupon Code
-      </div>
+      <div class="thumb-label">🎯 Smartscout Coupon Code</div>
 
       <div class="thumb-frame">
-
-        <img
-          id="thumbImg"
-          alt="NordVPN Coupon Code thumbnail"
-          style="display:none"
-        >
-
+        <img id="thumbImg" alt="Smartscout Coupon Code thumbnail" style="display:none">
         <div id="thumbPh" class="thumb-placeholder">
           📺 <b>Thumbnail goes here</b><br>
-          Paste your image link into
-          <b>thumbnailSrc</b> at the top of this file.
+          Add your image link to <b>thumbnailSrc</b>.
         </div>
-
       </div>
 
       <div class="thumb-cap">
-        Learn about the latest
-        <b>NordVPN Coupon Code</b>,
-        available discounts, and how to use the offer.
+        Watch the <b>Smartscout Coupon Code</b> video and learn how to use the offer.
       </div>
-
     </div>
 
-
-    <!-- VIDEO INFORMATION -->
-    <div
-      class="card info"
-      style="text-align:center;"
-    >
-
-      <div class="info-title">
-        ▶ NORDVPN COUPON CODE — 4 MINUTE GUIDE
+    <div class="card info">
+      <div class="info-title">▶ SMARTSCOUT COUPON CODE — WATCH THE 3 MINUTE VIDEO</div>
+      <div class="sub" style="margin-top:6px">
+        Watch the video for 3 minutes to learn about the coupon code, available discounts, and how to use the offer.
       </div>
-
-      <div
-        class="sub"
-        style="margin-top:6px;"
-      >
-        This page is designed to provide information about
-        NordVPN coupon codes, discounts, and the redemption process.
-      </div>
-
     </div>
 
-
-    <!-- SEARCH KEYWORD -->
     <div class="card">
-
-      <h2>
-        🔍 NordVPN Coupon Code
-      </h2>
+      <h2>🔍 Smartscout Coupon Code</h2>
 
       <div class="kw-row">
-
         <div class="kw-box">
-
-          <span class="yt">
-            ▶ YouTube:
-          </span>
-
-          <span id="kwText">
-            NordVPN coupon code
-          </span>
-
+          <span class="yt">▶ YouTube:</span>
+          <span id="kwText">Smartscout coupon code</span>
         </div>
-
-        <button
-          class="btn"
-          id="copyBtn"
-          onclick="copyKw()"
-        >
-          Copy
-        </button>
-
+        <button class="btn" id="copyBtn" onclick="copyKw()">Copy</button>
       </div>
 
-      <p
-        class="sub"
-        style="margin-top:10px"
-      >
-        Search for the latest NordVPN coupon code information
-        and compare the available offer details before purchasing.
+      <p class="sub" style="margin-top:10px">
+        Search for the latest Smartscout coupon code information and compare available offer details.
       </p>
-
     </div>
 
-
-    <!-- GUIDE -->
     <div class="card">
-
-      <h2>
-        📋 How to Check the NordVPN Deal
-      </h2>
+      <h2>📋 How to Use the Smartscout Coupon Code</h2>
 
       <ol class="steps">
-
-        <li>
-          <b>Search for:</b>
-          <span class="hl">
-            NordVPN coupon code
-          </span>
-          to find the latest deal information.
-        </li>
-
-        <li>
-          Check the current
-          <span class="hl">
-            discount percentage
-          </span>
-          and plan duration before purchasing.
-        </li>
-
-        <li>
-          Review the offer terms, including
-          billing period, renewal pricing, and
-          any applicable conditions.
-        </li>
-
-        <li>
-          Apply the available coupon or promotional
-          offer during checkout if it is still valid.
-        </li>
-
+        <li>Watch the <span class="hl">3 minute video</span> for coupon instructions.</li>
+        <li>Search for <span class="hl">Smartscout coupon code</span>.</li>
+        <li>Check the current discount and offer terms.</li>
+        <li>Apply the coupon during checkout if it is still valid.</li>
       </ol>
-
     </div>
 
-
-    <!-- DEAL -->
     <div class="card">
-
-      <h2>
-        🎟️ NordVPN Coupon Information
-      </h2>
+      <h2>🎟️ Smartscout Coupon Information</h2>
 
       <div class="deal-box">
-
-        <div class="deal-title">
-          CHECK LATEST NORDVPN DEAL
+        <div class="deal-title">WATCH THE 3 MINUTE VIDEO</div>
+        <div class="sub" style="margin-top:8px">
+          Coupon availability and discounts can change. Verify the offer before purchase.
         </div>
-
-        <div class="sub" style="margin-top:8px;">
-          Coupon availability and discounts can change.
-          Verify the current offer before completing your purchase.
-        </div>
-
-        <div class="coupon">
-          NORDVPN COUPON CODE
-        </div>
-
+        <div class="coupon">SMARTSCOUT COUPON CODE</div>
       </div>
-
     </div>
 
-
-    <!-- IMPORTANT INFORMATION -->
     <div class="card notice">
-
-      <h2>
-        ℹ️ Important Information
-      </h2>
-
+      <h2>ℹ️ Important Information</h2>
       <ul>
-
-        <li>
-          Promotional offers may change over time.
-        </li>
-
-        <li>
-          Some discounts may apply only to selected plans.
-        </li>
-
-        <li>
-          Check the final price at checkout before purchasing.
-        </li>
-
-        <li>
-          Review the applicable terms and renewal pricing.
-        </li>
-
-        <li>
-          Make sure the coupon is valid before relying on it.
-        </li>
-
+        <li>Watch the video for 3 minutes before using the coupon.</li>
+        <li>Promotional offers may change over time.</li>
+        <li>Check the final price at checkout.</li>
+        <li>Review all applicable terms and renewal pricing.</li>
       </ul>
-
     </div>
-
 
     <div class="foot">
-      Information provided for promotional and informational purposes.
-      Always verify the current offer before purchase. ✅
+      Information provided for promotional and informational purposes. ✅
     </div>
 
   </div>
 
-
   <script>
-
     const CONFIG = {
-
-      searchKeyword: "NordVPN coupon code",
-
+      searchKeyword: "Smartscout coupon code",
       thumbnailSrc: "thumb.jpg",
-
-      watchMinutes: "4"
-
+      watchMinutes: "3"
     };
 
+    (function () {
+      document.getElementById("kwText").textContent = CONFIG.searchKeyword;
 
-    (function(){
-
-      var c = CONFIG;
-
-
-      document.getElementById(
-        "kwText"
-      ).textContent = c.searchKeyword;
-
-
-      if(
-        c.thumbnailSrc &&
-        c.thumbnailSrc.trim() !== ""
-      ){
-
-        var img =
-          document.getElementById("thumbImg");
-
-
-        img.src =
-          c.thumbnailSrc +
-          (
-            c.thumbnailSrc.indexOf("data:") === 0
-              ? ""
-              : "?v=" + Date.now()
-          );
-
-
+      if (CONFIG.thumbnailSrc.trim() !== "") {
+        const img = document.getElementById("thumbImg");
+        img.src = CONFIG.thumbnailSrc + "?v=" + Date.now();
         img.style.display = "block";
-
-
-        document.getElementById(
-          "thumbPh"
-        ).style.display = "none";
-
+        document.getElementById("thumbPh").style.display = "none";
       }
-
     })();
 
+    function copyKw() {
+      const btn = document.getElementById("copyBtn");
 
-    function copyKw(){
+      navigator.clipboard.writeText(CONFIG.searchKeyword).then(() => {
+        btn.textContent = "Copied ✓";
+        btn.classList.add("copied");
 
-      var text =
-        CONFIG.searchKeyword;
-
-      var btn =
-        document.getElementById(
-          "copyBtn"
-        );
-
-
-      function done(){
-
-        btn.textContent =
-          "Copied ✓";
-
-        btn.classList.add(
-          "copied"
-        );
-
-
-        setTimeout(function(){
-
-          btn.textContent =
-            "Copy";
-
-          btn.classList.remove(
-            "copied"
-          );
-
-        },1600);
-
-      }
-
-
-      function fallback(){
-
-        var t =
-          document.createElement(
-            "textarea"
-          );
-
-        t.value = text;
-
-        document.body.appendChild(t);
-
-        t.select();
-
-
-        try{
-
-          document.execCommand(
-            "copy"
-          );
-
-        }catch(e){}
-
-
-        document.body.removeChild(t);
-
-        done();
-
-      }
-
-
-      if(
-        navigator.clipboard &&
-        navigator.clipboard.writeText
-      ){
-
-        navigator.clipboard
-          .writeText(text)
-          .then(done)
-          .catch(fallback);
-
-      }else{
-
-        fallback();
-
-      }
-
+        setTimeout(() => {
+          btn.textContent = "Copy";
+          btn.classList.remove("copied");
+        }, 1600);
+      });
     }
-
   </script>
-
 </body>
 </html>
+```
